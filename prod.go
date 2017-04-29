@@ -20,7 +20,7 @@ func Prod(data []float64, id int){
 
 	resmsg := comm.ResMessage{Id:id,Result:sum}
 
-	resmsg.Send("localhost:8000/res")
+	resmsg.Send("public/res")
 }
 
 func main(){
